@@ -4,7 +4,7 @@ const el = {
 };
 el.input.addEventListener("input", changeInput);
 function changeInput(event) {
-  const eventValue = event.currentTarget.value;
+  const eventValue = event.currentTarget.value.trim();
 
   if (eventValue) {
     el.output.textContent = eventValue;
